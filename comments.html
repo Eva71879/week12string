@@ -18,8 +18,10 @@
             <input type="text" class="inputName" />
           </div>
           <div class="main__avatar">
-            <p>Введите ссылку <span>вашего аватара:</span></p>
+            <p>Введите ссылку вашего аватара:</p>
             <input type="text" class="inputAvatar" />
+            <p>Или загрузите аватар:</p>
+            <input type="file" class="inputAvatarFile" />
           </div>
           <div class="main__comment">
             <p>Оставьте комментарий</p>
@@ -32,8 +34,11 @@
         <aside class="aside">
           <h2 class="aside__chat">Чат</h2>
           <div class="aside__container">
-            <img src="" alt="" class="aside__outputAvatar" />
-            <p class="aside__outputName"></p>
+            <div class="aside__left">
+              <img src="" alt="" class="aside__outputAvatar" />
+              <p class="aside__outputName"></p>
+            </div>
+            <p class="aside__commentTime"></p>
           </div>
           <p class="aside__outputComment"></p>
           <hr />

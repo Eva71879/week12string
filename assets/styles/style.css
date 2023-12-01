@@ -1,14 +1,15 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkblue;
+    /* outline: 1px solid black; */
 }
 
 body {
     background-color: rgb(220, 245, 243);
+    font-size: 18px;
 }
 
 .wrap {
-    
     width: 90%;
     margin: auto;
 }
@@ -19,6 +20,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: start;
+    gap: 20px;
 }
 
 .main {
@@ -40,12 +42,32 @@ body {
     gap: 5%;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+}
+
+.aside__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
 .aside__outputAvatar {
-    width: 165px;
-    height: 165px;
+    opacity: 0;
+}
+
+.aside__outputName {
+    font: bold;
+}
+
+.aside__outputAvatar {
+    width: 125px;
+    height: 125px;
     object-fit: cover;
+}
+
+.aside__outputComment {
+
 }
 
 .button {
